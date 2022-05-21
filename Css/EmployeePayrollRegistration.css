@@ -47,9 +47,9 @@ body{
   background-color: #f7f7f7;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 1;align-items: center;
   border: 0px solid green;
-}
+margin: auto;}
 
 .form{
   width: 65%;
@@ -57,6 +57,7 @@ body{
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #f5f5f5;
   opacity: 1;
+  border-radius: 1%;
 }
 
 .form-head{
@@ -124,4 +125,38 @@ select {
   letter-spacing: 0px;
   color: #42515f;
   background-color: transparent;
+}
+
+.buttonParent{
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button{
+  font-size: 20px;
+  font-family: Roboto;
+  letter-spacing: 0px;
+  color: #42515f;
+  opacity: 1;
+  border: none;
+  background-color: #f5f5f5;
+  font-weight: 400;
+  min-width: 140px;
+  padding: 7px 7px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.submitButton{
+  background-color: #f5f5f5;
+  margin-right: 30px;
+}
+
+.cancelButton{
+  text-decoration: none;
+  text-align: center;
+  background-color: #f5f5f5;
+  margin-right: 30px;
 }
