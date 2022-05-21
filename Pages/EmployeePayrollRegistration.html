@@ -17,6 +17,7 @@
       </div>
     </header>
     </div>
+    
     <div class="form-content">
       <form class="form" action="#" onsubmit="save();return false">
         <div class="form-head">Employee Payroll Form</div>
@@ -24,6 +25,7 @@
           <label class="label text" for="name">Name</label>
           <input class="input" type="text" id="name" name="name" placeholder="Your name.." required>
         </div>
+
         <div class="row-content">
           <label class="label text" for="profile">Profile Image</label>
           <div class="profile-radio-content">
@@ -45,6 +47,39 @@
             </label>
           </div>
         </div>
+
+        <div class="row-content">
+          <label class="label text" for="gender">Gender</label>
+          <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label class="text" for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label class="text" for="female">Female</label>
+          </div>
+        </div>
+
+        <div class="row-content">
+          <label class="label text" for="department">Department</label>
+          <div>
+            <input class="checkbox" type="checkbox" id="hr" name="department" value="HR">
+            <label class="text" for="hr">HR</label>
+            <input class="checkbox" type="checkbox" id="sales" name="department" value="Sales">
+            <label class="text" for="sales">Sales</label>
+            <input class="checkbox" type="checkbox" id="finance" name="department" value="Finance">
+            <label class="text" for="finance">Finance</label>
+            <input class="checkbox" type="checkbox" id="engineers" name="department" value="Engineers">
+            <label class="text" for="engineers">Engineers</label>
+            <input class="checkbox" type="checkbox" id="others" name="department" value="Others">
+            <label class="text" for="others">Others</label>
+          </div>
+        </div>
+
+        <div class="row-content">
+          <label class="label text" for="salary">Choose your Salary: </label>
+          <input class="input" type="range" id="salary" name="salary" min="300000" max="500000" step="100"
+              value="400000">
+          <output class="salary-output text" for="salary">400000</output>
+      </div>
       </form>
     </div>
 </body>
