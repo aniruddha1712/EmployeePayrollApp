@@ -43,7 +43,6 @@ const save = () => {
   try
   {
     let employeePayrollData = createEmployeePayroll();
-    alert(employeePayrollData.toString());
   } 
   catch(ex)
   {
