@@ -160,3 +160,52 @@ select {
   background-color: #f5f5f5;
   margin-right: 30px;
 }
+.cancelButton:hover{
+  background-color: rgba(255, 0, 0, 0.397);
+}
+.resetButton:hover{
+  background-color: rgba(255, 0, 0, 0.397);
+}
+.submitButton:hover{
+  background-color: rgba(0, 255, 0, 0.397);
+}
+
+/* media query */
+@media only screen and (max-width: 650px) 
+{
+.form {
+  margin-top: 10px;
+  width: 90%;
+}
+.row {
+  flex-direction: column;
+}
+.row-content {
+  display: block;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.profile-radio-button {
+  flex-flow: wrap;
+}
+.profile {
+  width: 30px;
+  height: 30px;
+  margin-left: 12px;
+}
+  
+.submit-reset {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content:end;
+  margin-bottom: 20px;
+}
+.buttonParent {
+  align-items: flex-start;
+}
+.cancelButton {
+    margin-left: 0px;
+}
+}
