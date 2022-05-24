@@ -48,7 +48,7 @@ html body{
   background: #82a70c 0% 0% no-repeat padding-box;
   border: none;
   border-radius: 5px;
-  padding: 5px 18px;
+  padding: 5px 10px;
   outline: none;
   cursor: pointer;
   text-decoration: none;
@@ -96,7 +96,8 @@ html body{
  }
 
  .table{
-   width: 100%;
+   width: 80%;
+   margin: 0 auto;
    border-collapse: separate;
    border-spacing: 0 15px;
    min-width: 800px;
@@ -147,7 +148,7 @@ td img{
 
 .dept-label{
   background-color: #e9fea5;
-  border-radius: 40%;
+  border-radius: 10px;
   width: fit-content;
   padding: 1px 7px;
   text-align: center;
