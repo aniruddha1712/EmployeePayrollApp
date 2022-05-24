@@ -35,10 +35,6 @@ const getInputValueById = (id) => {
 //   let value = document.getElementById(id).value;
 //   return value;
 // }
-const setTextValue = (id, value) => {
-  const element = document.querySelector(id);
-  element.textContent = value;
-}
 
 const save = () => {
   try
@@ -90,4 +86,33 @@ function createAndUpdateStorage(EmpPayrollData){
   }
   alert(empPayrollList.toString());
   localStorage.setItem("empPayrollList", JSON.stringify(empPayrollList))
+}
+
+const resetForm = () => {
+  setValue('#name', '');
+  unsetSelectedValues('[name=profile]');
+  unsetSelectedValues('[name=gender]');
+  unsetSelectedValues('[name=department]');
+  setTextValue('.salary-output', 400000);
+  setValue('#notes', '');
+  setValue('#day', '');
+  setValue('#month', '');
+  setValue('#year', '');
+  setTextValue('.text-error', '');
+}
+const unsetSelectedValues = (propertyValue) => {
+  let allItems = document.querySelectorAll(propertyValue);
+  allItems.forEach(item => {
+      item.checked = false
+  });
+}
+
+const setValue = (id, value) => {
+  const element = document.querySelector(id);
+  element.value = value;
+}
+
+const setTextValue = (id, value) => {
+  const element = document.querySelector(id);
+  element.textContent = value;
 }
